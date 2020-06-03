@@ -1,21 +1,22 @@
 vi 편집기 한번에 치환
-:%s/oldWord/newWord/g
-* ^M 지우기 >> :%s/^M$//g
+ :%s/oldWord/newWord/g
+ * ^M 지우기 >> :%s/^M$//g
 
 파일찾기
-find ./ -name 파일명
+ find ./ -name 파일명
 
 파일내 문자열 찾기
-grep -r "문자열" ./*
+ grep -r "문자열" ./*
 
 mysql DB 복구방법 ( * 바이너리 파일이 있을시 )
  ../mysqlbinlog leopit-bin.002 > rescue.sql   // 바이너리 >> sql 파일로 변환
  grep "insert" rescue.sql > rescue1.sql       // 필요한 sql 만 추출
  mysql -u 계정아이디 -p DB이름 < rescue1.sql   // sql 붓기
  
- 활성화 포트 확인
+활성화 포트 확인
  netstat -tnlp                                                      // 모든 정보
  lsof -i -nP | grep LISTEN | awk '{print $(NF-1)" "$1}' | sort -u   // 열린 포트, 프로세스명
  nmap localhost                                                     // 포트 통신 상태 프로세스명
  
- 
+리눅스 트래픽 모니터링 및 확인
+ https://www.linux.co.kr/home2/board/subbs/board.php?bo_table=lecture&wr_id=1809
