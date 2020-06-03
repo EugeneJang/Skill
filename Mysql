@@ -1,0 +1,8 @@
+MySQL에서 수행 중인 Process를 확인하는 방법
+
+show processlist ;                                                              // all
+mysql> SELECT * FROM INFORMATION_SCHEMA.PROCESSLIST WHERE COMMAND != 'Sleep';   // sleep view
+mysqladmin -u root -p -i 2 processlist                                          // monitoring
+mysqladmin -u root -p -i 2 processlist | grep -v Sleep                          // to no sleep
+
+SELECT * FROM INFORMATION_SCHEMA.PROCESSLIST where time > 10 and info is not null;    // time 10 sec > 
