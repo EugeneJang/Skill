@@ -1,1 +1,8 @@
+Spring Class간 property를 복사
+public static void copyProperties(Object source, Object target) throws BeansException {
+        copyProperties(source, target, (Class)null, (String[])null);
+}
+
+>> https://gompangs.tistory.com/entry/JAVASpring-BeanUtils-%EA%B4%80%EB%A0%A8
+
 
