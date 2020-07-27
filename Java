@@ -10,3 +10,7 @@ public static void copyProperties(Object source, Object target) throws BeansExce
 
 Json 데이터 개행시키기
 https://blog.naver.com/PostView.nhn?blogId=utime&logNo=220897003512
+
+
+Byte 배열형태 Object로 변환
+https://blog.naver.com/PostView.nhn?blogId=utime&logNo=221334376034&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView
