@@ -6,3 +6,7 @@ public static void copyProperties(Object source, Object target) throws BeansExce
 >> https://gompangs.tistory.com/entry/JAVASpring-BeanUtils-%EA%B4%80%EB%A0%A8
 
 
+
+
+Json 데이터 개행시키기
+https://blog.naver.com/PostView.nhn?blogId=utime&logNo=220897003512
