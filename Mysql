@@ -6,3 +6,13 @@ mysqladmin -u root -p -i 2 processlist                                          
 mysqladmin -u root -p -i 2 processlist | grep -v Sleep                          // to no sleep
 
 SELECT * FROM INFORMATION_SCHEMA.PROCESSLIST where time > 10 and info is not null;    // time 10 sec > 
+
+
+DB Dump -- All Delete Insert
+mysqldump -u root -p\비번 DataBase 테이블 > 쿼리명
+
+DB Dump -- Where
+mysqldump -u root -p\비번 --where="조건" -t DataBase 테이블 > 쿼리명
+
+Dump Insert
+mysql -u root -p\비번 DataBase < 쿼리명
